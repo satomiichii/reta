@@ -1,0 +1,26 @@
+/* color
+light_blue: #DDE2F4,
+dark_blue: #08102A,
+solid_gold: #B68F04,
+light_yellow: 20% solid_gold
+title_red: #950909 */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+}
+
+#area {
+}
+
+#pro {
+  background-color: #dde2f4;
+}
+
+#step {
+}
+
+#form {
+}
