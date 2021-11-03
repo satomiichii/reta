@@ -9,18 +9,23 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#main {
+#title {
+  padding: 50px;
 }
 
-#area {
+#service-area {
+  padding: 50px;
 }
 
-#pro {
+#benefit {
+  padding: 50px;
   background-color: #dde2f4;
 }
 
-#step {
+#steps {
+  padding: 50px;
 }
 
 #form {
+  padding: 50px;
 }
