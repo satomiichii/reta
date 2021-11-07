@@ -234,36 +234,43 @@
     <section id="form">
         <h2>Contact Us</h2>
         <form>
-            <div class="mb-3">
-                <p>* Please allow 24 hours notice when scheduling online meetings.</p>
-                <label for="first-name" class="form-label">First name</label>
+            <div class="form-group mb-3">
+                <p class="contact-subheading">* Please allow 24 hours notice when scheduling online meetings.</p>
+                <label for="first-name" class="form-label">First Name</label>
+                <span class="required-label">required</span>
                 <input type="text" class="form-control" id="first-name">
             </div>
-            <div class="mb-3">
-                <label for="middle-name" class="form-label">Middle name</label>
+            <div class="form-group mb-3">
+                <label for="middle-name" class="form-label">Middle Name</label>
                 <input type="text" class="form-control" id="middle-name">
             </div>
-            <div class="mb-3">
-                <label for="last-name" class="form-label">Last name</label>
+            <div class="form-group mb-3">
+                <label for="last-name" class="form-label">Last Name</label>
+                <span class="required-label">required</span>
                 <input type="text" class="form-control" id="last-name">
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
+            <div class="form-group mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <span class="required-label">required</span>
                 <input type="email" class="form-control" id="email" placeholder="name@example.com">
             </div>
-            <div class="mb-3">
-                <label for="email-confirm" class="form-label">Email address (comfirmation)</label>
+            <div class="form-group mb-3">
+                <label for="email-confirm" class="form-label">Email Address (comfirm)</label>
+                <span class="required-label">required</span>
                 <input type="email" class="form-control" id="email-confirm" placeholder="name@example.com">
             </div>
-            <div class="mb-3">
+            <div class="form-group mb-3">
                 <label for="phone" class="form-label">Phone</label>
                 <input type="text" class="form-control" id="phone">
             </div>
-            <div class="mb-3">
-                <label for="country" class="form-label">Country of residents</label>
+            <div class="form-group mb-3">
+                <label for="country" class="form-label">Country of Residence</label>
+                <span class="required-label">required</span>
                 <input type="text" class="form-control" id="country">
             </div>
-            <label for="service">What service are you interested in?</label>
+            <div class="form-group mb-3">
+              <label for="service" class="form-label">What service are you interested in?</label>
+              <span class="required-label">required</span>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                 <label class="form-check-label" for="flexRadioDefault1">
@@ -282,8 +289,9 @@
                   For investment
                 </label>
             </div>
-            <div class="mb-3">
-                <label for="detail" class="form-label">Inquiry details</label>
+            </div>
+            <div class="form-group mb-3">
+                <label for="detail" class="form-label">Inquiry Details</label>
                 <textarea class="form-control" id="detail" rows="6"></textarea>
               </div>
             <input type="submit" value="Submit" class='submit-button'>

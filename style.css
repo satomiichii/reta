@@ -81,6 +81,17 @@ form {
 #form {
 }
 
+.form-label {
+  font-weight: 600;
+}
+.required-label {
+  background-color: #950909;
+  color: #fff;
+  margin-left: 14px;
+  padding: 1px 14px;
+  font-size: .8rem;
+  border-radius: 1px;
+}
 .title_image {
   background-image: url(./assets/room.jpg);
   background-size: 100% auto;
@@ -91,7 +102,9 @@ form {
   justify-content: center;
   align-items: center;
 }
-
+.contact-subheading {
+  font-size: .8rem;
+}
 .sub-title {
   display: flex;
   flex-direction: row;
