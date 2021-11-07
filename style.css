@@ -9,23 +9,162 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#title {
+section {
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-stretch: extra-expanded;
+  text-shadow: 2px 2px 20px #08102a;
+  letter-spacing: 5px;
+  color: #ffff;
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #08102a;
+  font-weight: 600;
+}
+
+h4 {
+  color: #b68f04;
+  font-weight: 600;
+  text-align: center;
+}
+
+#steps h5 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+h5.card-title {
+  color: #b68f04;
+  text-align: center;
+  font-weight: 600;
+  padding: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+form {
+  width: 700px;
+}
+
+#title {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #service-area {
-  padding: 50px;
 }
 
 #benefit {
-  padding: 50px;
   background-color: #dde2f4;
 }
 
-#steps {
-  padding: 50px;
+#steps h4 {
+  margin: 50px 0;
 }
 
 #form {
+}
+
+.title_image {
+  background-image: url(./assets/room.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   padding: 50px;
+}
+
+.sub-title > div {
+  padding: 5px 15px;
+  background-color: #b68f04;
+  color: #ffff;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.title-text {
+  padding: 20px 60px;
+  line-height: 1.7;
+}
+
+.card {
+  height: max-content;
+  min-height: 400px;
+}
+
+.card-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 63px;
+}
+
+.step-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(182, 143, 4, 0.2);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  min-height: 136px;
+  min-width: 110px;
+  max-width: 100px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+
+.material-icons-round.md-48 {
+  font-size: 48px;
+  color: #525252;
+}
+
+.submit-button {
+  font-size: 1rem;
+  padding: 5px 15px;
+  background-color: #b68f04;
+  color: #ffff;
+  border: none;
+  border-radius: 3px;
+}
+
+.submit-button:hover {
+  background-color: rgb(182, 143, 4, 0.6);
 }
