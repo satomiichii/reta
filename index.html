@@ -18,16 +18,22 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
     <title>RETA</title>
   </head>
   <body>
-    <section id="title">
-      <h1>Reta's Brokerage</h1>
-      <div>sub title</div>
-      <div>
+    <div id="title">
+      <div class="title_image">
+        <h1>Reta's Brokerage</h1>
+      </div>
+      <div class="sub-title">
+        <div>For Purchase</div>
+        <div>For Sale</div>
+        <div>For Investment</div>
+      </div>
+      <p class="title-text">
         We are a full service brokerage aiming to help buyers, sellers and
         investors find success in the real estate market of Japan. Whether you
         are a first time buyer, prospective seller or experienced investor, we
@@ -35,59 +41,253 @@
         With our agents' worldwide experience and commitment to customer
         satisfaction, RETA makes it easy for people around the world to reach
         their real estate goals in Japan.
-      </div>
+      </p>
     </section>
     <section id="service-area">
-      <h1>Service Area</h1>
+      <h2>Service Area</h2>
       <div>Map</div>
       <div>Pic1</div>
       <div>Pic2</div>
     </section>
     <section id="benefit">
-      <h1>3 Reasons to chose us</h1>
-      <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <div>pic</div>
-          <div>Licenced in Japan and the U.S.</div>
-          <div>
-            RETA's agents will provide high-quality service with extensive
-            knowledge of both the U.S. and Japan's real estate markets and
-            regulations.
+        <h2>3 Reasons to chose us</h2>
+        <div class="row gx-4 gy-4">
+            <div class="col-sm-12 col-md-4">
+                <div class="card">
+                    <img src="./assets/agent.jpg" class="card-img-top" alt="real-estate-agent" />
+                    <div class="card-body">
+                        <div class="card-title-container">
+                            <h5 class="card-title">Licenced in Japan and the U.S.</h5>
+                        </div>
+                        <p class="card-text">
+                        RETA's agents will provide high-quality service with extensive
+                        knowledge of both the U.S. and Japan's real estate markets and
+                        regulations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 ">
+                <div class="card">
+                    <img src="./assets/shake_hands.jpeg" class="card-img-top" alt="shakehands" />
+                    <div class="card-body">
+                        <div class="card-title-container">
+                            <h5 class="card-title">Work 100% for Your Interests</h5>
+                        </div>
+                        <p class="card-text">
+                        A "Dual Agent" is common in Japanese real estate brokerages. In
+                        contrast, RETA will only work for a single side to avoid conflicts
+                        of interest.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card">
+                    <img src="./assets/zoom.jpeg" class="card-img-top" alt="online-meeting" />
+                    <div class="card-body">
+                        <div class="card-title-container">
+                            <h5 class="card-title">Available 24/7</h5>
+                        </div>
+                        <p class="card-text">
+                        Whatever your time zone may be, RETA will provide online meetings at
+                        a convenient time for you, as well as timely email communication.
+                        </p>
+                    </div>
+                </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
-          <div>pic</div>
-          <div>Work 100% for Your Interests</div>
-          <div>
-            A "Dual Agent" is common in Japanese real estate brokerages. In
-            contrast, RETA will only work for a single side to avoid conflicts
-            of interest.
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <div>pic</div>
-          <div>Available 24/7</div>
-          <div>
-            Whatever your time zone may be, RETA will provide online meetings at
-            a convenient time for you, as well as timely email communication.
-          </div>
-        </div>
-      </div>
     </section>
     <section id="steps">
-      <h1>How it works</h1>
+        <h2>How it works</h2>
+        <div>
+            <h4>For Purchase</h4>
+            <div class='step-container'>
+                <div class="step">
+                    <div class="icon">
+                        <span class="material-icons-round md-48">group</span>
+                    </div>
+                    <h5>Consultation</h5>
+                </div>
+                <div class='arrow'>
+                    <span class="material-icons-round">arrow_right</span>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <span class="material-icons-round md-48">travel_explore</span>
+                    </div>
+                    <h5>Property Information Gathering</h5>
+                </div>
+                <div class='arrow'>
+                    <span class="material-icons-round">arrow_right</span>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <span class="material-icons-round md-48">holiday_village</span>
+                    </div>
+                    <h5>Home Touring</h5>
+                </div>
+                <div class='arrow'>
+                    <span class="material-icons-round">arrow_right</span>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <span class="material-icons-round md-48">local_offer</span>
+                    </div>
+                    <h5>Offer</h5>
+                </div>
+                <div class='arrow'>
+                    <span class="material-icons-round">arrow_right</span>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <span class="material-icons-round md-48">list_alt</span>
+                    </div>
+                    <h5>Contracting</h5>
+                </div>
+                <div class='arrow'>
+                    <span class="material-icons-round">arrow_right</span>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <span class="material-icons-round md-48">real_estate_agent</span>
+                    </div>
+                    <h5>Closing</h5>
+                </div>
+                <div class='arrow'>
+                    <span class="material-icons-round">arrow_right</span>
+                </div>
+                <div class="step">
+                    <div class="icon">
+                        <span class="material-icons-round md-48">vpn_key</span>
+                    </div>
+                    <h5>Move-in</h5>
+                </div>
+            </div>
+        </div>
       <div>
-        <h3>For Purchase</h3>
-        <div>steps</div>
-      </div>
-      <div>
-        <h3>For Sale</h3>
-        <div>steps</div>
+        <h4>For Sale</h4>
+        <div class='step-container'>
+            <div class="step">
+                <div class="icon">
+                    <span class="material-icons-round md-48">other_houses</span>
+                </div>
+                <h5>Inspection /Assessment</h5>
+            </div>
+            <div class='arrow'>
+                <span class="material-icons-round">arrow_right</span>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <span class="material-icons-round md-48">group</span>
+                </div>
+                <h5>Brokerage Agreement</h5>
+            </div>
+            <div class='arrow'>
+                <span class="material-icons-round">arrow_right</span>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <span class="material-icons-round md-48">inventory</span>
+                </div>
+                <h5>Property Condition Report</h5>
+            </div>
+            <div class='arrow'>
+                <span class="material-icons-round">arrow_right</span>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <span class="material-icons-round md-48">local_offer</span>
+                </div>
+                <h5>Property Marketing</h5>
+            </div>
+            <div class='arrow'>
+                <span class="material-icons-round">arrow_right</span>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <span class="material-icons-round md-48">autorenew</span>
+                </div>
+                <h5>Negotiation</h5>
+            </div>
+            <div class='arrow'>
+                <span class="material-icons-round">arrow_right</span>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <span class="material-icons-round md-48">list_alt</span>
+                </div>
+                <h5>Contracting</h5>
+            </div>
+            <div class='arrow'>
+                <span class="material-icons-round">arrow_right</span>
+            </div>
+            <div class="step">
+                <div class="icon">
+                    <span class="material-icons-round md-48">real_estate_agent</span>
+                </div>
+                <h5>Closing</h5>
+            </div>
+        </div>
       </div>
     </section>
     <section id="form">
-      <h1>Contact Us</h1>
-      <form></form>
+        <h2>Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <p>* Please allow 24 hours notice when scheduling online meetings.</p>
+                <label for="first-name" class="form-label">First name</label>
+                <input type="text" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="middle-name" class="form-label">Middle name</label>
+                <input type="text" class="form-control" id="middle-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="email-confirm" class="form-label">Email address (comfirmation)</label>
+                <input type="email" class="form-control" id="email-confirm" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone">
+            </div>
+            <div class="mb-3">
+                <label for="country" class="form-label">Country of residents</label>
+                <input type="text" class="form-control" id="country">
+            </div>
+            <label for="service">What service are you interested in?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                  For purchase
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  For sale
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  For investment
+                </label>
+            </div>
+            <div class="mb-3">
+                <label for="detail" class="form-label">Inquiry details</label>
+                <textarea class="form-control" id="detail" rows="6"></textarea>
+              </div>
+            <input type="submit" value="Submit" class='submit-button'>
+        </form>
     </section>
   </body>
 </html>
