@@ -271,30 +271,73 @@
             <div class="form-group mb-3">
               <label for="service" class="form-label">What service are you interested in?</label>
               <span class="required-label">required</span>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                <label class="form-check-label" for="flexRadioDefault1">
-                  For purchase
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                <label class="form-check-label" for="flexRadioDefault2">
-                  For sale
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">
-                  For investment
-                </label>
-            </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    For purchase
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    For sale
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    For investment
+                  </label>
+              </div>
             </div>
             <div class="form-group mb-3">
-                <label for="detail" class="form-label">Inquiry Details</label>
-                <textarea class="form-control" id="detail" rows="6"></textarea>
+              <label for="cities" class="form-label">Cities</label>
+              <span class="required-label">required</span>
+              <div class="form-check-row row">
+                <div class="col-sm-2 form-check">
+                  <input type="checkbox" class="form-check-input" value="tokyo" id="check1">
+                  <label for="check1" class="form-check-label">Tokyo</label>
+                </div>
+                <div class="col-sm-2 form-check">
+                  <input type="checkbox" class="form-check-input" value="osaka" id="check2">
+                  <label for="check2" class="form-check-label">Osaka</label>
+                </div>
               </div>
-            <input type="submit" value="Submit" class='submit-button'>
+              <div class="form-check-row row">
+                <div class="col-sm-2 form-check">
+                  <input type="checkbox" class="form-check-input" value="yokohama" id="check3">
+                  <label for="check3" class="form-check-label">Yokohama</label>
+                </div>
+                <div class="col-sm-2 form-check">
+                  <input type="checkbox" class="form-check-input" value="kobe" id="check4">
+                  <label for="check4" class="form-check-label">Kobe</label>
+                </div>
+              </div>
+              <div class="form-check-row row">
+                <div class="col-sm-2 form-check">
+                  <input type="checkbox" class="form-check-input" value="kyoto" id="check5">
+                  <label for="check5" class="form-check-label">Kyoto</label>
+                </div>
+                <div class="col-sm-2 form-check">
+                  <input type="checkbox" class="form-check-input" value="kanazawa" id="check6">
+                  <label for="check6" class="form-check-label">Kanazawa</label>
+                </div>
+              </div>
+              <div class="form-check-row row">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" value="other" id="check7">
+                  <label for="check7" class="form-check-label d-inline">Other</label>
+                  <input type="text" class="form-control d-inline" id="other-city">
+                </div>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="detail" class="form-label">Inquiry Details</label>
+              <textarea class="form-control" id="detail" rows="6"></textarea>
+            </div>
+            <div class="text-center">
+              <input type="submit" value="Submit" class='submit-button'>
+            </div>
         </form>
     </section>
   </body>

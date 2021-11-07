@@ -87,10 +87,20 @@ form {
 .required-label {
   background-color: #950909;
   color: #fff;
-  margin-left: 14px;
-  padding: 1px 14px;
-  font-size: .8rem;
-  border-radius: 1px;
+  margin-left: 12px;
+  padding: 1px 8px;
+  font-size: .6rem;
+  border-radius: 2px;
+}
+.form-check-row {
+  padding-left: 12px;
+}
+#other-city {
+  transform: translateX(30px);
+  width: 180px;
+  height: 28px;
+  font-size: .9rem;
+  padding-left: 6px;
 }
 .title_image {
   background-image: url(./assets/room.jpg);
@@ -170,10 +180,10 @@ form {
 }
 
 .submit-button {
-  font-size: 1rem;
-  padding: 5px 15px;
+  font-size: 1.2rem;
+  padding: 5px 32px;
   background-color: #b68f04;
-  color: #ffff;
+  color: #fff;
   border: none;
   border-radius: 3px;
 }
