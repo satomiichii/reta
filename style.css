@@ -107,7 +107,7 @@ form {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  height: 40vh;
+  height: 38vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,6 +133,10 @@ form {
 .title-text {
   padding: 20px 60px;
   line-height: 1.7;
+}
+
+.map {
+  margin-bottom: 40px;
 }
 
 .map img {
