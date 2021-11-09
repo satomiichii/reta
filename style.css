@@ -41,7 +41,7 @@ h4 {
 }
 
 #steps h5 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-align: center;
 }
 
@@ -57,7 +57,7 @@ img {
 }
 
 form {
-  width: 700px;
+  width: 675px;
 }
 
 #title {
@@ -65,9 +65,6 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#service-area {
 }
 
 #benefit {
@@ -78,7 +75,9 @@ form {
   margin-bottom: 50px;
 }
 
-#form {
+.ital {
+  font-style: italic;
+  font-size: 1.75rem;
 }
 
 .form-label {
@@ -107,7 +106,7 @@ form {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  height: 38vh;
+  height: 34vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,11 +155,17 @@ form {
 }
 
 .step-container {
+  padding: 0 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   background-color: rgb(182, 143, 4, 0.2);
+  max-width: 765px;
+}
+
+.step-container-vert {
+  display: none;
 }
 
 .purchase {
@@ -172,9 +177,9 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px;
+  padding: 10px 0 0;
   min-height: 136px;
-  min-width: 110px;
+  min-width: 82px;
   max-width: 100px;
 }
 
@@ -182,12 +187,12 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 60px;
-  margin-bottom: 10px;
+  min-height: 50px;
+  margin-bottom: 8px;
 }
 
-.material-icons-round.md-48 {
-  font-size: 48px;
+.material-icons-round.md-36 {
+  font-size: 36px;
   color: #525252;
 }
 
@@ -202,4 +207,84 @@ form {
 
 .submit-button:hover {
   background-color: rgb(182, 143, 4, 0.6);
+}
+
+@media only screen and (min-width: 800px) {
+  .step-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(182, 143, 4, 0.2);
+    min-width: 900px;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  section {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.05rem;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  form {
+    width: 300px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .title_image {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sub-title {
+    padding: 25px;
+  }
+
+  .sub-title > div {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #b68f04;
+    color: #ffff;
+    font-weight: 700;
+    font-size: 0.55rem;
+    letter-spacing: 1.5px;
+  }
+
+  .step-container {
+    display: none;
+  }
+
+  .step-container-vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .step-container-vert .step {
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(182, 143, 4, 0.2);
+    box-shadow: 1.5px 1.5px 3px rgb(177, 177, 177);
+    min-height: 45px;
+    min-width: 300px;
+    max-width: 1200px;
+  }
 }
