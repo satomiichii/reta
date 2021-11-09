@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
+    <script src="scripts.js" defer></script>
     <title>RETA</title>
   </head>
   <body>
@@ -364,7 +365,7 @@
     </section>
     <section id="form">
         <h2>Contact Us</h2>
-        <form>
+        <div>
             <div class="form-group mb-3">
                 <p class="contact-subheading">* Please allow 24 hours notice when scheduling online meetings.</p>
                 <label for="first-name" class="form-label">First Name</label>
@@ -467,9 +468,9 @@
               <textarea class="form-control" id="detail" rows="6"></textarea>
             </div>
             <div class="text-center">
-              <input type="submit" value="Submit" class='submit-button'>
+              <button class="submit-button" id="submit">Submit</button>
             </div>
-        </form>
+        </div>
     </section>
   </body>
 </html>
