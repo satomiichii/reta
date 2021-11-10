@@ -1,19 +1,36 @@
+const form = document.getElementById('contact-form')
 function addSubmitListener () {
-    const submitBtn = document.getElementById('submit')
-    submitBtn.addEventListener('click', handleSubmit)
+    form.addEventListener('submit', handleSubmit)
 }
-function handleSubmit () {
-    const form = {
-        firstName: document.getElementById('first-name').value,
-        middleName: document.getElementById('middle-name').value,
-        lastName: document.getElementById('last-name').value,
-        email: document.getElementById('email').value,
-        emailConfirm: document.getElementById('email-confirm').value,
-        phone: document.getElementById('phone').value,
-        country: document.getElementById('country').value,
-        detail: document.getElementById('detail').value
+function handleSubmit (e) {
+    e.preventDefault()
+    const reqBody = generateRequestBody()
+    console.log('reqBody: ', reqBody)
+}
+
+function generateRequestBody () {
+    const reqBody = {
+        selectedService: null,
+        selectedCities: []
     }
-    console.log('form: ', form)
+    const elements = form.elements
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i]
+        if (element.type !== 'submit') {
+            if (element.type === 'radio') {
+                if (element.checked) {
+                    reqBody.selectedService = element.value
+                }
+            } else if (element.type === 'checkbox') {
+                if (element.checked) {
+                    reqBody.selectedCities.push(element.value)
+                }
+            } else {
+                reqBody[element.id] = element.value
+            }
+        }
+    }
+    return reqBody
 }
 
 function init () {
