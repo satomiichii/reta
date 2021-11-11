@@ -245,7 +245,7 @@ form {
   }
 
   form {
-    width: 300px;
+    width: 320px;
   }
 
   p {
@@ -293,7 +293,7 @@ form {
     background-color: rgb(182, 143, 4, 0.2);
     box-shadow: 1.5px 1.5px 3px rgb(177, 177, 177);
     min-height: 45px;
-    min-width: 300px;
+    min-width: 320px;
     max-width: 1200px;
   }
 }
