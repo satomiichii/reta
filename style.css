@@ -245,7 +245,7 @@ form {
   }
 
   form {
-    width: 320px;
+    width: 330px;
   }
 
   p {
@@ -293,7 +293,16 @@ form {
     background-color: rgb(182, 143, 4, 0.2);
     box-shadow: 1.5px 1.5px 3px rgb(177, 177, 177);
     min-height: 45px;
-    min-width: 320px;
+    min-width: 330px;
     max-width: 1200px;
+  }
+
+  .required-label {
+    background-color: #950909;
+    color: #fff;
+    margin-left: 4px;
+    padding: 1px 5px;
+    font-size: 0.6rem;
+    border-radius: 2px;
   }
 }
