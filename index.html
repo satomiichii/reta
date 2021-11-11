@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
       rel="stylesheet"
     />
+    <script src="scripts.js" defer></script>
     <script defer src="scroll_animation.js"></script>
     <title>RETA</title>
   </head>
@@ -365,58 +366,58 @@
     </section>
     <section id="form" class="show-on-scroll">
         <h2>Contact Us</h2>
-        <form>
+        <form id="contact-form">
             <div class="form-group mb-3">
                 <p class="contact-subheading">* Please allow 24 hours notice when scheduling online meetings.</p>
-                <label for="first-name" class="form-label">First Name</label>
+                <label for="firstName" class="form-label">First Name</label>
                 <span class="required-label">required</span>
-                <input type="text" class="form-control" id="first-name">
+                <input type="text" class="form-control" id="firstName" required>
             </div>
             <div class="form-group mb-3">
-                <label for="middle-name" class="form-label">Middle Name</label>
-                <input type="text" class="form-control" id="middle-name">
+                <label for="middleName" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="middleName">
             </div>
             <div class="form-group mb-3">
-                <label for="last-name" class="form-label">Last Name</label>
+                <label for="lastName" class="form-label">Last Name</label>
                 <span class="required-label">required</span>
-                <input type="text" class="form-control" id="last-name">
+                <input type="text" class="form-control" id="lastName" required>
             </div>
             <div class="form-group mb-3">
                 <label for="email" class="form-label">Email Address</label>
                 <span class="required-label">required</span>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
             </div>
             <div class="form-group mb-3">
-                <label for="email-confirm" class="form-label">Email Address (comfirm)</label>
+                <label for="emailConfirm" class="form-label">Email Address (comfirm)</label>
                 <span class="required-label">required</span>
-                <input type="email" class="form-control" id="email-confirm" placeholder="name@example.com">
+                <input type="email" class="form-control" id="emailConfirm" placeholder="name@example.com" required>
             </div>
             <div class="form-group mb-3">
                 <label for="phone" class="form-label">Phone</label>
-                <input type="text" class="form-control" id="phone">
+                <input type="tel" class="form-control" id="phone">
             </div>
             <div class="form-group mb-3">
                 <label for="country" class="form-label">Country of Residence</label>
                 <span class="required-label">required</span>
-                <input type="text" class="form-control" id="country">
+                <input type="text" class="form-control" id="country" required>
             </div>
             <div class="form-group mb-3">
               <label for="service" class="form-label">What service are you interested in?</label>
               <span class="required-label">required</span>
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="For Purchase" checked>
                   <label class="form-check-label" for="flexRadioDefault1">
                     For purchase
                   </label>
               </div>
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="For Sale">
                   <label class="form-check-label" for="flexRadioDefault2">
                     For sale
                   </label>
               </div>
               <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="For Investment">
                   <label class="form-check-label" for="flexRadioDefault3">
                     For investment
                   </label>
@@ -465,10 +466,10 @@
             </div>
             <div class="form-group mb-3">
               <label for="detail" class="form-label">Inquiry Details</label>
-              <textarea class="form-control" id="detail" rows="6"></textarea>
+              <textarea class="form-control" id="detail" rows="8"></textarea>
             </div>
             <div class="text-center">
-              <input type="submit" value="Submit" class='submit-button'>
+              <input type="submit" class="submit-button"/>
             </div>
         </form>
     </section>
