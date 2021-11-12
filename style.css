@@ -269,7 +269,7 @@ form {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1250px) {
   .step-container {
     padding: 10px;
     display: flex;
