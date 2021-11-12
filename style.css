@@ -86,7 +86,7 @@ form {
 
 .ital {
   font-style: italic;
-  font-size: 1.75rem;
+  font-size: 1.85rem;
 }
 
 .form-label {
@@ -115,7 +115,7 @@ form {
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  height: 34vh;
+  height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,9 +131,10 @@ form {
 }
 
 .sub-title > div {
-  padding: 5px 15px;
+  padding: 5px 20px;
   background-color: #b68f04;
   color: #ffff;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 1.5px;
 }
@@ -143,8 +144,13 @@ form {
   line-height: 1.7;
 }
 
+.area {
+  display: flex;
+  flex-direction: column;
+}
+
 .map {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .map img {
@@ -200,6 +206,11 @@ form {
   margin-bottom: 8px;
 }
 
+.material-icons-round.md-48 {
+  font-size: 36px;
+  color: #525252;
+}
+
 .material-icons-round.md-36 {
   font-size: 36px;
   color: #525252;
@@ -221,13 +232,102 @@ form {
 @media only screen and (min-width: 800px) {
   .step-container {
     padding: 10px;
+    min-width: 900px;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .area {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .map {
+    margin-right: 40px;
+    margin-bottom: 0px;
+  }
+
+  .area-pics {
+    width: 525px;
+    height: 525px;
+    position: relative;
+  }
+
+  .area-pic1 {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 325px;
+  }
+
+  .area-pic2 {
+    position: absolute;
+    left: -30px;
+    bottom: 60px;
+    width: 325px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .step-container {
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgb(182, 143, 4, 0.2);
-    min-width: 900px;
+    min-width: 1200px;
     max-width: 1200px;
+  }
+  .material-icons-round.md-48 {
+    font-size: 48px;
+    color: #525252;
+  }
+  #steps h5 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .step {
+    margin: 0 20px;
+    min-height: 136px;
+    min-width: 82px;
+    max-width: 100px;
+  }
+
+  .area-pics {
+    width: 525px;
+    height: 525px;
+    position: relative;
+  }
+
+  .area-pic1 {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    width: 350px;
+  }
+
+  .area-pic2 {
+    position: absolute;
+    left: -15px;
+    bottom: 35px;
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .title_image {
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .title_image {
+    height: 35vh;
+  }
+  .material-icons-round.md-36 {
+    font-size: 24px;
   }
 }
 
@@ -252,6 +352,19 @@ form {
     margin: 0;
   }
 
+  h5.card-title {
+    color: #b68f04;
+    text-align: center;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 5px 0;
+  }
+
+  .step h5 {
+    font-size: 1.1rem !important;
+    font-weight: 500;
+  }
+
   .title_image {
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -263,16 +376,16 @@ form {
   }
 
   .sub-title {
-    padding: 25px;
+    padding: 30px 5px;
   }
 
   .sub-title > div {
-    margin: 0 5px;
-    padding: 5px 10px;
+    margin: 0 3px;
+    padding: 5px 6px;
     background-color: #b68f04;
     color: #ffff;
     font-weight: 700;
-    font-size: 0.63rem;
+    font-size: 0.8rem;
     letter-spacing: 1.5px;
   }
 
