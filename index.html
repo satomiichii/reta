@@ -391,7 +391,7 @@
             </div>
             <div class="form-group mb-3">
                 <label for="emailConfirm" class="form-label">Email Address (comfirm)</label>
-                <span class="required-label">required</span>
+                <span class="required-label">required</span> <spam id='error' class='invisible'>*must match with email address above</spam>
                 <input type="email" class="form-control" id="emailConfirm" placeholder="name@example.com" required>
             </div>
             <div class="form-group mb-3">
@@ -471,7 +471,7 @@
               <textarea class="form-control" id="detail" rows="8"></textarea>
             </div>
             <div class="text-center">
-              <input type="submit" class="submit-button"　value="Submit"/>
+              <button class="submit-button">Submit</button>
             </div>
         </form>
     </section>
