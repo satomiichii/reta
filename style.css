@@ -419,3 +419,9 @@ form {
     border-radius: 2px;
   }
 }
+
+#error {
+  color: #950909;
+  font-weight: 600;
+  font-size: small;
+}
